@@ -111,7 +111,7 @@ def over?
 end
 
 def winner
-  if (over? && won?
+  if (over? && won?)
     #Returns the value of array "Board" where win condition was met
     return board[won?(board)[0]]
   end
