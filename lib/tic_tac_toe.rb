@@ -86,7 +86,7 @@ def turn
 end
 
 
-def won?(board)
+def won?(@board)
   WIN_COMBINATIONS.detect do |win|
     if win.all?{|index_num| board[index_num] == "X"}
       win.inspect
