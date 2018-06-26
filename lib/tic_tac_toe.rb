@@ -117,5 +117,15 @@ def winner
   end
 end
 
+def play(board)
+  while (turn_count(board) <= 9) && !over?(board)
+  turn(board)
+  end
+  winner(board)
+  if (winner(board) == "X" || winner(board) == "O")
+  puts "Congratulations " +winner(board) + "!"
+else
+  puts "Cat's Game!"
+end
 
 end
