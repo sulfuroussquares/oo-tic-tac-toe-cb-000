@@ -76,7 +76,7 @@ def turn(board)
       display_board(board)
     else
       letter = "O"
-      move(board, input, letter)
+      move(input, letter)
       display_board(board)
     end
   else
