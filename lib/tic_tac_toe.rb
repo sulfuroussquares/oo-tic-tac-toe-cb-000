@@ -101,7 +101,7 @@ def full?
 end
 
 def draw?
-  won?(@board).nil? && full?(board)
+  won?.nil? && full?
 end
 
 end
