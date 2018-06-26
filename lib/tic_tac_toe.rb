@@ -45,7 +45,7 @@ def valid_move?(index)
 end
 
 
-def position_taken?(index)
+def position_taken?(input_to_index(index))
   if (@board[index] == "" || @board[index] == " " || @board[index] == nil)
     return false
   else
