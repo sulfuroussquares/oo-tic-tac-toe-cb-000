@@ -118,11 +118,11 @@ def winner
 end
 
 def play
-  while (turn_count <= 9) && !over?(board)
-  turn(board)
+  while (turn_count <= 9) && !over?
+  turn
   end
-  winner(board)
-  if (winner(board) == "X" || winner(board) == "O")
+  winner
+  if (winner == "X" || winner == "O")
   puts "Congratulations " +winner(board) + "!"
 else
   puts "Cat's Game!"
