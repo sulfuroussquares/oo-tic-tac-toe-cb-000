@@ -117,8 +117,8 @@ def winner
   end
 end
 
-def play(board)
-  while (turn_count(board) <= 9) && !over?(board)
+def play
+  while (turn_count <= 9) && !over?(board)
   turn(board)
   end
   winner(board)
