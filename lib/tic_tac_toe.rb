@@ -123,7 +123,7 @@ def play
   end
   winner
   if (winner == "X" || winner == "O")
-  puts "Congratulations " +winner(board) + "!"
+  puts "Congratulations " +winner + "!"
 else
   puts "Cat's Game!"
 end
