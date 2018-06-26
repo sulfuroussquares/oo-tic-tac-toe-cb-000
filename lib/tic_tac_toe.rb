@@ -96,4 +96,12 @@ def won?
   end
 end
 
+def full?
+  @board.none? {|space| space == " " || space == nil}
+end
+
+def draw?
+  won?(@board).nil? && full?(board)
+end
+
 end
