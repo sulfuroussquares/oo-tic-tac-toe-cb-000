@@ -74,11 +74,11 @@ def turn
       #letter = "X"
       move(input)
       display_board(@board)
-    else
-      letter = "O"
-      move(input, letter)
-      display_board(@board)
-    end
+  #  else
+    #  letter = "O"
+    #  move(input, letter)
+    #  display_board(@board)
+  #  end
   else
   puts "Invalid Entry"
   turn
