@@ -73,11 +73,11 @@ def turn
     if turn_count(board) % 2 == 0
       letter = "X"
       move(input, letter)
-      display_board(board)
+      display_board(@board)
     else
       letter = "O"
       move(input, letter)
-      display_board(board)
+      display_board(@board)
     end
   else
   puts "Invalid Entry"
