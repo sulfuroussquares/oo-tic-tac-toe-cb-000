@@ -54,7 +54,7 @@ end
 end
 
 def move(input, letter="X")
-  board[input] = letter
+  @board[input] = letter
 end
 
 end
