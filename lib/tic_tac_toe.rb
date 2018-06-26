@@ -110,6 +110,11 @@ def over?
   won? || full? || draw?
 end
 
-
+def winner
+  if (over? && won?
+    #Returns the value of array "Board" where win condition was met
+    return board[won?(board)[0]]
+  end
+end
 
 end
