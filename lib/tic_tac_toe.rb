@@ -63,15 +63,15 @@ end
 end
 
 def move(input, letter="X")
-  @board[input] = letter
+  @board[input] = current_player
 end
 
 def turn
   puts "Please enter 1-9:"
   @input = input_to_index(gets.strip)
   if valid_move?(input) == true
-    if turn_count(@board) % 2 == 0
-      letter = "X"
+    #if turn_count(@board) % 2 == 0
+      #letter = "X"
       move(input, letter)
       display_board(@board)
     else
