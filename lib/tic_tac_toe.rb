@@ -57,4 +57,23 @@ def move(input, letter="X")
   @board[input] = letter
 end
 
+def turn(board)
+  puts "Please enter 1-9:"
+  input = input_to_index(gets.strip)
+  if valid_move?(board, input) == true
+    if turn_count(board) % 2 == 0
+      letter = "X"
+      move(board, input, letter)
+      display_board(board)
+    else
+      letter = "O"
+      move(board, input, letter)
+      display_board(board)
+    end
+  else
+  puts "Invalid Entry"
+  turn(board)
+  end
+end
+
 end
