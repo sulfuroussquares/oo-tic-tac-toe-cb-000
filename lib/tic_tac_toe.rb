@@ -3,6 +3,15 @@ class TicTacToe
       @board = board || Array.new(9, " ")
     end
 
+    def input=(input)
+    @input = input
+  end
+
+  def input
+    @input
+  end
+
+
     def current_player
       turn_count % 2 == 0 ? "X" : "O"
     end
