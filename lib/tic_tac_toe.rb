@@ -113,7 +113,7 @@ end
 def winner
   if (over? && won?)
     #Returns the value of array "Board" where win condition was met
-    return board[won?[0]]
+    return @board[won?[0]]
   end
 end
 
