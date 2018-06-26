@@ -72,7 +72,7 @@ def turn(board)
   if valid_move?(input) == true
     if turn_count(board) % 2 == 0
       letter = "X"
-      move(board, input, letter)
+      move(input, letter)
       display_board(board)
     else
       letter = "O"
